@@ -56,7 +56,7 @@ return(
 
 <div className="container">
 
-<h1>Elite Age Calculator</h1>
+<h1>Age Calculator</h1>
 
 <div className="input-section">
 
