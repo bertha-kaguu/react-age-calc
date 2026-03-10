@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#4facfe,#00f2fe);
+  transition:0.4s;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container{
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.25);
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.2);
+  width:500px;
+  max-width:90%;
+  text-align:center;
   }
-}
+  
+  h1{
+  margin-bottom:20px;
+  color:white;
+  }
+  
+  .input-section{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+  }
+  
+  input{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  }
+  
+  button{
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  background:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  }
+  
+  .person{
+  margin-top:15px;
+  padding:15px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.5);
+  color:#000;
+  }
+  
+  .age-box{
+  display:flex;
+  justify-content:space-around;
+  margin-top:10px;
+  font-weight:bold;
+  }
+  
+  .extra-info{
+  margin-top:10px;
+  font-size:14px;
+  }
+  
+  .progress-bar{
+  margin-top:10px;
+  height:8px;
+  background:#ddd;
+  border-radius:10px;
+  overflow:hidden;
+  }
+  
+  .progress{
+  height:100%;
+  background:#4facfe;
+  width:0%;
+  transition:1s;
+  }
+  
+  .theme-toggle{
+  position:absolute;
+  top:20px;
+  right:20px;
+  }
+  
+  .dark{
+  background:#111;
+  }
+  
+  .dark .container{
+  background:rgba(0,0,0,0.5);
+  color:white;
+  }
+  
+  .dark .person{
+  background:rgba(0,0,0,0.6);
+  color:white;
+  }
+  
+  .seconds{
+  font-size:12px;
+  opacity:0.8;
+  margin-top:5px;
+  }
