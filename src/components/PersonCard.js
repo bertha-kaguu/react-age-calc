@@ -72,7 +72,7 @@ setSeconds(sec)
 
 return()=>clearInterval(interval)
 
-},[])
+},[birth])
 
 return(
 
